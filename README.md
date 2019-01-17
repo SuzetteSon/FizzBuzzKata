@@ -1,9 +1,10 @@
 # FizzBuzz
 
-Let's do the classic [FizzBuzz kata described here](https://codingdojo.org/kata/FizzBuzz/)
-However, we'll add a small requirement to the original kata. In the response from your module, you should signal to the user __without throwing any errors!__ whether the request was successful or not. 
-This means that if the users of your fizzbuzz module makes a valid request, they should get a message back that indicates the request was successful and what the result was. 
-And if they makes an invalid request, e.g. with the argument `-4` or `"foo"`, they should get a message back that says there was an error
+## Stage 1
+
+As an added small requirement to the original kata. In the response from your module, you should signal to the user __without throwing any errors!__ whether the request was successful or not. 
+This means that if the users of the fizzbuzz module makes a valid request, they should get a message back that indicates the request was successful and what the result was. 
+And if they make an invalid request, e.g. with the argument `-4` or `"foo"`, they should get a message back that says there was an error
 This means that if the users of your fizzbuzz module makes a request with the argument `-4` or `"foo"`, they should get a message that tells them there was an error and some hint about how they can make a correct request.
 
 ## Project setup
@@ -13,9 +14,6 @@ This means that if the users of your fizzbuzz module makes a request with the ar
 - Edit `package.json` so that `npm run test` runs the entire suite of _unit_ tests.
 - Edit `package.json` so that eslint runs before the test suite.
 - Edit `package.json` so that mocha run all unit tests whenever a javascript file changes. You may use whatever method you want to achive this. Mocha has a _watch_ feature, or you may use some other npm project (e.g. `onchange`).
-
-## TDD
-Now it's kata time! You will find the description of FizzBuzz [here](https://codingdojo.org/kata/FizzBuzz/).
 
 ### Red
 - Write a trivial test and make sure it fails.
