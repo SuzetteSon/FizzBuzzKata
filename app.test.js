@@ -13,9 +13,19 @@ test("15 prints FizzBuzz", () => {
 });
 
 test("-10 to throw error", () => {
-  expect(app.fizzbuzz(-10)).toBe("error, only numbers between 1 and 100 allowed");
+  expect(app.fizzbuzz(-10)).toBe(
+    "error, only numbers between 1 and 100 allowed"
+  );
 });
 
 test("'foo' to throw error", () => {
-    expect(app.fizzbuzz('foo')).toBe("error, only numbers allowed");
-  });
+  expect(app.fizzbuzz("foo")).toBe("error, only numbers allowed");
+});
+
+test("13 prints Fizz", () => {
+  expect(app.fizzbuzz(13)).toBe("Fizz");
+});
+
+test("51 prints Buzz", () => {
+  expect(app.fizzbuzz(58)).toBe("Buzz");
+});
